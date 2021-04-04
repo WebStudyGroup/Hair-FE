@@ -1,8 +1,8 @@
 import React from 'react';
-
+import '@styles/example.scoped.scss'
 const Home = ()=> {
   return(
-    <div>
+    <div className="example">
       asdfffd
     </div>
   )
