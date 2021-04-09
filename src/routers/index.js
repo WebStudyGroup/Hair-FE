@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import { Home } from '@pages'; 
+import { signIn, signUp } from '@pages'; 
 import { Default } from '@layout';
 
 /* 다이나믹 레이아웃 */
@@ -16,7 +16,8 @@ function Routers() {
 	return(
 		<BrowserRouter>
 			<Switch>
-				<AppLayout exact path="/" component={Home} layout={Default} />
+				<AppLayout exact path="/" component={signIn} layout={Default} />
+				<AppLayout exact path="/signUp" component={signUp} layout={Default} />
 			</Switch>
 		</BrowserRouter>
 	)
